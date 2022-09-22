@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap");
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Order Summary Component</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background: url(./pattern-background-desktop.svg);
+        background-color: #e0e8ff;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .box {
+        background-color: white;
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+      }
+
+      h1 {
+        color: #1f2e55;
+        font-size: 28px;
+        margin: 45px 0 17px 0;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 900;
+      }
+
+      p {
+        color: #717fa6;
+        max-width: 354px;
+        margin: auto;
+        font-size: 16px;
+        font-family: "Red Hat Display";
+        font-weight: 500;
+      }
+
+      .plan {
+        position: relative;
+        width: 354px;
+        height: 98px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #f7f9ff;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+      }
+
+      .center {
+        margin-left: 20px;
+      }
+
+      .right {
+        font-size: 14px;
+        color: #382ae1;
+        text-decoration: underline;
+        font-family: "Red Hat Display";
+        font-weight: 700;
+        margin-left: 94px;
+      }
+
+      .right:hover {
+        cursor: pointer;
+        color: #766cf1;
+        text-decoration: none;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-family: "Red Hat Display";
+        font-weight: 900;
+      }
+
+      button {
+        width: 354px;
+        height: 50px;
+        background-color: #382ae1;
+        border: none;
+        border-radius: 11px;
+        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+        font-size: 15px;
+        margin-bottom: 32px;
+        color: #ffffff;
+        font-family: "Red Hat Display";
+        font-weight: 700;
+      }
+
+      button:hover {
+        background-color: #766cf1;
+        cursor: pointer;
+      }
+
+      h2 {
+        font-size: 15px;
+        color: #717fa6;
+        margin-bottom: 48px;
+        font-family: "Red Hat Display";
+        font-weight: 900;
+      }
+
+      h2:hover {
+        color: #1f2e55;
+        cursor: pointer;
+      }
+
+      .year {
+        color: #717fa6;
+        font-weight: 500;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img class="cover" src="./illustration-hero.svg" />
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+
+      <div class="plan">
+        <div class="left">
+          <img src="./icon-music.svg" />
+        </div>
+
+        <div class="center">
+          <h3>Annual Plan</h3>
+          <h3 class="year">$59.99/year</h3>
+        </div>
+
+        <div class="right">
+          <h4>Change</h4>
+        </div>
+      </div>
+
+      <button>Proceed to Payment</button>
+
+      <h2>Cancel Order</h2>
+    </div>
+  </body>
+</html>
